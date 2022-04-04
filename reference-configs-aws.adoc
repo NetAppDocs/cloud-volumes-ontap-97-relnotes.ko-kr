@@ -1,0 +1,205 @@
+---
+sidebar: sidebar 
+permalink: reference-configs-aws.html 
+keywords: ec2, instance, type, explore, standard, premium, byol, capacity, maximum, virtual machine, Cloud Volumes ONTAP, supported, configurations, sizes, disks 
+summary: AWS에서는 여러 Cloud Volumes ONTAP 구성이 지원됩니다. 
+---
+= AWS에서 지원되는 구성
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+AWS에서는 여러 Cloud Volumes ONTAP 구성이 지원됩니다.
+
+
+
+== 라이센스에 의해 지원되는 구성
+
+Cloud Volumes ONTAP는 AWS에서 단일 노드 시스템으로, 내결함성 및 무중단 운영을 지원하는 고가용성(HA) 노드 쌍으로 제공됩니다.
+
+단일 노드 시스템을 HA 쌍으로 업그레이드하는 것은 지원되지 않습니다. 단일 노드 시스템과 HA 쌍 간에 전환하려면 새 시스템을 구축하고 기존 시스템의 데이터를 새 시스템으로 복제해야 합니다.
+
+[cols="h,d,d,d,d,d,d"]
+|===
+|  | 프리모늄 | PAYGO 탐색 | PAYGO 표준 | PAYGO 프리미엄 | 노드 기반 라이센스 | 용량 기반 라이센스 
+
+
+| 최대 시스템 용량(디스크 + 오브젝트 스토리지) | 500GiB | 2TiB | 10TiB | 368TiB^1^ | 라이센스당 368TiB ^1^ | 2 PiB^1^ 
+
+
+| 지원되는 EC2 인스턴스 유형 ^2^  a| 
+* c4.4xLarge
+* c4.8xLarge
+* c5.9xLarge
+* c5.18xLarge
+* c5d.4xLarge^3^
+* c5d.9xLarge^3^
+* c5d.18xLarge^3^
+* c5n.9xLarge^4^
+* c5n.18xLarge^4^
+* M4.xLarge
+* m4.2xLarge
+* m4.4xLarge
+* m5.xlarge
+* m5.2xLarge
+* m5.4xLarge
+* m5.16xLarge
+* m5d.8xLarge^3^
+* m5d.12xLarge^3^
+* R4.xLarge
+* r4.2xLarge
+* R5.xLarge
+* r5.2xLarge
+* r5.8xLarge
+* r5.12xLarge^5^
+* r5d.2xLarge^3^
+
+ a| 
+* M4.xLarge
+* m5.xlarge
+
+ a| 
+* m4.2xLarge
+* m5.2xLarge
+* R4.xLarge
+* R5.xLarge
+
+ a| 
+* c4.4xLarge
+* c4.8xLarge
+* c5.9xLarge
+* c5.18xLarge
+* c5d.4xLarge^3^
+* c5d.9xLarge^3^
+* c5d.18xLarge^3^
+* c5n.9xLarge^4^
+* c5n.18xLarge^4^
+* m4.4xLarge
+* m5.4xLarge
+* m5.16xLarge
+* m5d.8xLarge^3^
+* m5d.12xLarge^3^
+* r4.2xLarge
+* r5.2xLarge
+* r5.8xLarge
+* r5.12xLarge^5^
+* r5d.2xLarge^3^
+
+ a| 
+* c4.4xLarge
+* c4.8xLarge
+* c5.9xLarge
+* c5.18xLarge
+* c5d.4xLarge^3^
+* c5d.9xLarge^3^
+* c5d.18xLarge^3^
+* c5n.9xLarge^4^
+* c5n.18xLarge^4^
+* M4.xLarge
+* m4.2xLarge
+* m4.4xLarge
+* m5.xlarge
+* m5.2xLarge
+* m5.4xLarge
+* m5.16xLarge
+* m5d.8xLarge^3^
+* m5d.12xLarge^3^
+* R4.xLarge
+* r4.2xLarge
+* R5.xLarge
+* r5.2xLarge
+* r5.8xLarge
+* r5.12xLarge^5^
+* r5d.2xLarge^3^
+
+ a| 
+* c4.4xLarge
+* c4.8xLarge
+* c5.9xLarge
+* c5.18xLarge
+* c5d.4xLarge^3^
+* c5d.9xLarge^3^
+* c5d.18xLarge^3^
+* c5n.9xLarge^4^
+* c5n.18xLarge^4^
+* M4.xLarge
+* m4.2xLarge
+* m4.4xLarge
+* m5.xlarge
+* m5.2xLarge
+* m5.4xLarge
+* m5.16xLarge
+* m5d.8xLarge^3^
+* m5d.12xLarge^3^
+* R4.xLarge
+* r4.2xLarge
+* R5.xLarge
+* r5.2xLarge
+* r5.8xLarge
+* r5.12xLarge^5^
+* r5d.2xLarge^3^
+
+
+
+
+| 지원되는 디스크 유형 ^6^ 6+| 범용 SSD(GP3 및 GP2), 프로비저닝된 IOPS SSD(io1) 및 처리량 최적화 HDD(st1)^7^ 
+|===
+참고:
+
+. 일부 구성에서는 디스크 제한만으로 용량 제한에 도달하지 못합니다. 이 경우 를 통해 용량 제한에 도달할 수 있습니다 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"^]. 디스크 제한에 대한 자세한 내용은 를 참조하십시오 link:reference-limits-aws.html["보관 제한"].
+. EC2 인스턴스 유형을 선택하면 해당 인스턴스가 공유 인스턴스인지 전용 인스턴스인지 지정할 수 있습니다.
+. 이러한 인스턴스 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의 실시간 지능형 캐싱을 통해 데이터 액세스 속도를 높입니다. 데이터베이스, 이메일, 파일 서비스를 비롯한 랜덤 읽기 집약적인 워크로드에 효과적입니다. Flash Cache의 성능 향상 기능을 활용하려면 모든 볼륨에서 압축을 해제해야 합니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["자세한 정보"^].
+. c5n.9xLarge 및 c5n.18xLarge는 9.7 P5부터 지원됩니다.
+. r5.12xLarge 인스턴스 유형은 지원 가능성의 알려진 제한 사항이 있습니다. 패닉이 발생하여 노드가 예기치 않게 재부팅되는 경우 시스템에서 문제 해결에 사용되는 핵심 파일을 수집하지 못하고 문제의 근본 원인을 해결하지 못할 수 있습니다. 고객은 위험 및 제한된 지원 약관에 동의하며 이 조건이 발생할 경우 모든 지원 책임을 집니다.
+. Cloud Volumes ONTAP Standard, Premium 및 BYOL에서 SSD를 사용할 경우 향상된 쓰기 성능 제공
+. 처리량 최적화 HDD(st1)를 사용하는 경우에는 데이터를 오브젝트 스토리지에 계층화하지 않는 것이 좋습니다.
+. AWS 지역 지원은 를 참조하십시오 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^].
+. Cloud Volumes ONTAP는 클라우드 공급자의 예약된 VM 인스턴스 또는 주문형 VM 인스턴스에서 실행될 수 있습니다. 다른 VM 인스턴스 유형을 사용하는 솔루션은 지원되지 않습니다.
+
+
+
+
+== 지원되는 디스크 크기입니다
+
+AWS에서는 aggregate에 동일한 유형과 크기의 디스크를 최대 6개까지 포함할 수 있습니다.
+
+[cols="3*"]
+|===
+| 범용 SSD(GP3 및 GP2) | 프로비저닝된 IOPS SSD(ios1) | 처리량 최적화 HDD(st1) 
+
+
+ a| 
+* 100GiB
+* 500GiB
+* 1TiB
+* 2TiB
+* 4TiB
+* 6TiB
+* 8TiB
+* 16TiB
+
+ a| 
+* 100GiB
+* 500GiB
+* 1TiB
+* 2TiB
+* 4TiB
+* 6TiB
+* 8TiB
+* 16TiB
+
+ a| 
+* 500GiB
+* 1TiB
+* 2TiB
+* 4TiB
+* 6TiB
+* 8TiB
+* 16TiB
+
+
+|===
