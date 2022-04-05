@@ -30,7 +30,6 @@ AWS, Azure, Google Cloud와 같은 모든 클라우드 공급자의 Cloud Volume
 Cloud Volumes ONTAP는 중국 지역에서 다음과 같이 지원됩니다.
 
 * Cloud Volumes ONTAP 9.6은 AWS 중국 지역에서 지원됩니다.
-* Cloud Volumes ONTAP 9.9는 Azure 중국 지역에서 지원됩니다.
 * 단일 노드 시스템이 지원됩니다.
 * NetApp에서 직접 구매한 라이센스가 지원됩니다.
 
