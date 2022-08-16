@@ -108,25 +108,25 @@ NOTE: 일부 VM 유형의 경우 아래 나열된 최대 시스템 용량에 도
 | DS3_v2 | 13 | 368TiB | 368TiB | 416TiB | 368TiB x 각 라이센스 
 
 
-| DS4_v2 | 29 | 368TiB | 368TiB | 928TiB | 368TiB x 각 라이센스 
+| DS4_v2 | 29 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
 
 
-| DS5_v2 | 61 | 368TiB | 368TiB | 1.95PiB | 368TiB x 각 라이센스 
+| DS5_v2 | 61 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
 
 
-| DS13_v2 | 29 | 368TiB | 368TiB | 928TiB | 368TiB x 각 라이센스 
+| DS13_v2 | 29 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
 
 
-| DS14_v2 | 61 | 368TiB | 368TiB | 1.95PiB | 368TiB x 각 라이센스 
+| DS14_v2 | 61 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
 
 
-| DS15_v2 | 61 | 368TiB | 368TiB | 1.95PiB | 368TiB x 각 라이센스 
+| DS15_v2 | 61 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
 
 
-| E32s_v3 | 29 | 368TiB | 368TiB | 928TiB | 368TiB x 각 라이센스 
+| E32s_v3 | 29 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
 
 
-| E48s_v3 | 29 | 368TiB | 368TiB | 928TiB | 368TiB x 각 라이센스 
+| E48s_v3 | 29 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
 
 
 | L8s_v2 | 13 | 368TiB | 368TiB | 416TiB | 368TiB x 각 라이센스 
@@ -143,25 +143,25 @@ NOTE: 일부 VM 유형의 경우 아래 나열된 최대 시스템 용량에 도
 | DS3_v2 | 13 | 416TiB | 2 PiB 
 
 
-| DS4_v2 | 29 | 928TiB | 2 PiB 
+| DS4_v2 | 29 | 896TiB | 2 PiB 
 
 
-| DS5_v2 | 61 | 1.95PiB | 2 PiB 
+| DS5_v2 | 61 | 896TiB | 2 PiB 
 
 
-| DS13_v2 | 29 | 928TiB | 2 PiB 
+| DS13_v2 | 29 | 896TiB | 2 PiB 
 
 
-| DS14_v2 | 61 | 1.95PiB | 2 PiB 
+| DS14_v2 | 61 | 896TiB | 2 PiB 
 
 
-| DS15_v2 | 61 | 1.95PiB | 2 PiB 
+| DS15_v2 | 61 | 896TiB | 2 PiB 
 
 
-| E32s_v3 | 29 | 928TiB | 2 PiB 
+| E32s_v3 | 29 | 896TiB | 2 PiB 
 
 
-| E48s_v3 | 29 | 928TiB | 2 PiB 
+| E48s_v3 | 29 | 896TiB | 2 PiB 
 
 
 | L8s_v2 | 13 | 416TiB | 2 PiB 
