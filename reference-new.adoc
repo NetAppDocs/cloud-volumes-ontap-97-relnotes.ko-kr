@@ -223,8 +223,8 @@ Cloud Volumes ONTAP 9.7 및 이전 버전에서 문제가 발견되었습니다.
 
 Cloud Volumes ONTAP 9.7 RC1은 현재 AWS, Azure 및 Google 클라우드 플랫폼에서 제공됩니다. 에 도입된 기능 외에도 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP 9.7"^]이 Cloud Volumes ONTAP 릴리스에는 다음이 포함됩니다.
 
-*  Cache support in Azure
-*  for Azure NIC detach events
+* <<Azure에서 Flash Cache 지원>>
+* <<Azure NIC 분리 이벤트 수정>>
 
 
 
