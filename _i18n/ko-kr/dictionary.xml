@@ -18,17 +18,14 @@
   <block id="1de430b06ad7ac64cf016ffed9f4194b" category="section-title">Cloud Volumes ONTAP HA 쌍은 즉각적인 스토리지 반환을 지원하지 않습니다</block>
   <block id="d69dddad3d38a1500a52e7e599cb94df" category="paragraph">노드가 재부팅된 후 파트너는 스토리지를 반환하기 전에 데이터를 동기화해야 합니다. 데이터를 재동기화하는 데 걸리는 시간은 노드가 다운된 동안 클라이언트가 쓴 데이터의 양과 반환 시간 동안 데이터 쓰기 속도에 따라 달라집니다.</block>
   <block id="ac1c2f0887629ee768721c3b8cf91e3a" category="inline-link">AWS에서 실행 중인 Cloud Volumes ONTAP HA 쌍에서 스토리지의 작동 방식에 대해 알아보십시오</block>
-  <block id="1ede57873000993784f510b4546c1c3f" category="paragraph"><block ref="946966cdbb5ad64ec13d8ce9c3014b31" category="inline-link-rx"></block>.</block>
   <block id="feb49be8ef50e34ae8a47a5369859187" category="section-title">AWS C2S 환경의 제한 사항</block>
   <block id="286cc15dc9f73773a029b936b2788c19" category="inline-link">AWS C2S 환경에서 시작하십시오</block>
-  <block id="e1fd46c84609b96f4458729b4ee8c5ea" category="paragraph">Cloud Manager 문서의 제한 사항 보기:<block ref="fd45e509325fef59e1c268c2f62eedf4" category="inline-link-rx"></block></block>
   <block id="00341a78c2eaf7d804cfe027a2f67870" category="summary">Cloud Volumes ONTAP는 AWS에서 스토리지 구성을 제한하여 안정적인 운영 기능을 제공합니다. 최상의 성능을 위해 시스템을 최대 값으로 구성하지 마십시오.</block>
   <block id="6870aed8e6dfc4f093d5b5c6f8a4d81c" category="doc">AWS에서의 스토리지 제한</block>
   <block id="b3dfe19c7d46d1f8795ac17bf3d5a909" category="paragraph">Cloud Volumes ONTAP는 안정적인 운영을 제공하기 위해 스토리지 구성에 제한이 있습니다. 최상의 성능을 위해 시스템을 최대 값으로 구성하지 마십시오.</block>
   <block id="ecedb9353641e4bd058af0268a6edce8" category="section-title">라이센스별 최대 시스템 용량</block>
   <block id="7de15f2416b1b598e771303381d1179e" category="paragraph">Cloud Volumes ONTAP 시스템의 최대 시스템 용량은 라이센스에 따라 결정됩니다. 최대 시스템 용량에는 디스크 기반 스토리지와 데이터 계층화에 사용되는 오브젝트 스토리지가 포함됩니다. NetApp은 이 제한을 초과하지 않습니다.</block>
   <block id="ba23388576c937a1743b84554bd13c72" category="inline-link">비활성 데이터를 오브젝트 스토리지로 계층화</block>
-  <block id="b774c1f3c317ef47132ce9a79c17a903" category="paragraph">일부 HA 구성에서는 디스크 하나만 사용하여 용량 제한에 도달하지 않도록 합니다. 이 경우 를 통해 용량 제한에 도달할 수 있습니다<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>. 자세한 내용은 아래의 용량 및 디스크 제한을 참조하십시오.</block>
   <block id="794df3791a8c800841516007427a2aa3" category="cell">라이센스</block>
   <block id="643a529396d04bbbe61c8daa70456163" category="cell">최대 시스템 용량(디스크 + 오브젝트 스토리지)</block>
   <block id="d8fe59d93325a956d9b5fd3e85bb96d8" category="cell">프리모늄</block>
@@ -49,7 +46,6 @@
   <block id="64902ebf86d86e0c5dfcc29138584b73" category="paragraph">Cloud Volumes ONTAP는 EBS 볼륨을 디스크로 사용하며 최대 디스크 크기는 16TiB입니다. 아래 섹션에는 EC2 인스턴스 유형 중 많은 수의 디스크 제한이 서로 다르기 때문에 EC2 인스턴스 유형별 디스크 및 계층화 제한이 나와 있습니다. 또한 디스크 제한은 단일 노드 시스템과 HA 쌍 간에 다릅니다.</block>
   <block id="5eb6e090da55ad28bf2f9c1286619ef2" category="paragraph">아래의 디스크 제한은 사용자 데이터를 포함하는 디스크에만 적용됩니다. 이 제한에는 부팅 디스크 및 루트 디스크가 포함되지 않습니다.</block>
   <block id="275e3ef1a302e67e93bcf0f30d566f74" category="inline-link">Cloud Volumes ONTAP에 시스템 라이센스를 추가하는 방법에 대해 알아보십시오</block>
-  <block id="bb1dfd389b14b44028041022a8d2899f" category="admonition">이제 Cloud Volumes ONTAP BYOL 시스템에 여러 노드 기반 라이센스를 구입하여 368TiB 이상의 용량을 할당할 수 있습니다. 단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다. 디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>.<block ref="cd9ff634efd9a4fe20f170cd618702b5" category="inline-link-rx"></block>.</block>
   <block id="129e3a061f7870067c1e133ba0a412f2" category="section-title">프리미엄 라이센스가 있는 단일 노드</block>
   <block id="4037b2b5756ae2a7b370c7b6e783aa25" category="cell">인스턴스 패밀리</block>
   <block id="4f42986706a322f09678a2f25be54dd9" category="cell">노드당 최대 디스크 수입니다</block>
@@ -161,7 +157,6 @@
   <block id="1538d38eb23a96781db500ec7bd30195" category="inline-link">지원되는 Azure 지역 목록을 참조하십시오</block>
   <block id="5520e32d61a58dff51fc6730939c3baf" category="summary">Cloud Volumes ONTAP은 안정적인 운영을 제공하기 위해 Google Cloud에서 스토리지 구성 제한을 가지고 있습니다. 최상의 성능을 위해 시스템을 최대 값으로 구성하지 마십시오.</block>
   <block id="c73908091fadeb9dec16abab42821644" category="doc">Google Cloud의 스토리지 제한</block>
-  <block id="b5110a96ee31f0d84f4df3d51e44588e" category="paragraph">일부 구성에서는 디스크 제한만으로 용량 제한에 도달하지 못합니다. 용량 제한에 도달할 수 있습니다<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>. 자세한 내용은 아래의 디스크 제한을 참조하십시오.</block>
   <block id="47a5e6e39f64ff5d5dfb25da1aa3f3f2" category="cell">500GB</block>
   <block id="5f807342ab46838a576d3111827add1c" category="cell">2TB(Explore에서 데이터 계층화가 지원되지 않음)</block>
   <block id="1191f788083da9194f8eef9400d10898" category="cell">10TB</block>
@@ -227,10 +222,8 @@
   <block id="9116d248ecfb6241ae0ac82e933291a7" category="cell">지원되는 디스크 유형 ^6^</block>
   <block id="7c4d1dd8156eddc2c504c9404061db38" category="cell">범용 SSD(GP3 및 GP2), 프로비저닝된 IOPS SSD(io1) 및 처리량 최적화 HDD(st1)^7^</block>
   <block id="9cb3b0db1f5a7a0032a165789bcde1dd" category="inline-link-macro">보관 제한</block>
-  <block id="200f2587d6d9c86f9f31c89a52660dd4" category="list-text">일부 구성에서는 디스크 제한만으로 용량 제한에 도달하지 못합니다. 이 경우 를 통해 용량 제한에 도달할 수 있습니다<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>. 디스크 제한에 대한 자세한 내용은 를 참조하십시오 <block ref="71ccaacc6f6c8feca068c7ff1a7b2eb5" category="inline-link-macro-rx"></block>.</block>
   <block id="9de28fbf6817cd511eb799f9575b611d" category="list-text">EC2 인스턴스 유형을 선택하면 해당 인스턴스가 공유 인스턴스인지 전용 인스턴스인지 지정할 수 있습니다.</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">자세한 정보</block>
-  <block id="7c884164439fc8ceb9b8489cdf9b2eb1" category="list-text">이러한 인스턴스 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의 실시간 지능형 캐싱을 통해 데이터 액세스 속도를 높입니다. 데이터베이스, 이메일, 파일 서비스를 비롯한 랜덤 읽기 집약적인 워크로드에 효과적입니다. Flash Cache의 성능 향상 기능을 활용하려면 모든 볼륨에서 압축을 해제해야 합니다.<block ref="11a0a91823c32739dc802a8a06ed9368" category="inline-link-rx"></block>.</block>
   <block id="006f76c464223b3110d68e954ba511b8" category="list-text">c5n.9xLarge 및 c5n.18xLarge는 9.7 P5부터 지원됩니다.</block>
   <block id="b1cc92c4fd4cc62fe29503eb59d61723" category="list-text">r5.12xLarge 인스턴스 유형은 지원 가능성의 알려진 제한 사항이 있습니다. 패닉이 발생하여 노드가 예기치 않게 재부팅되는 경우 시스템에서 문제 해결에 사용되는 핵심 파일을 수집하지 못하고 문제의 근본 원인을 해결하지 못할 수 있습니다. 고객은 위험 및 제한된 지원 약관에 동의하며 이 조건이 발생할 경우 모든 지원 책임을 집니다.</block>
   <block id="0c4c4e63836f218793463e3bcdaddf27" category="list-text">Cloud Volumes ONTAP Standard, Premium 및 BYOL에서 SSD를 사용할 경우 향상된 쓰기 성능 제공</block>
@@ -287,7 +280,6 @@
   <block id="24aa50b65a436c4efc843ed62aab1f03" category="list-text">PAYGO Explore에서는 Azure Blob 저장소에 대한 데이터 계층화가 지원되지 않습니다.</block>
   <block id="11509498a3f1573cdde878f927dc10bd" category="inline-link">울트라급 SSD</block>
   <block id="0a1f6a0fa33e6a786e0c1f71a0ea33a9" category="list-text">이 VM 유형은 을 사용합니다<block ref="d656d82278337f3ecf8db6b2a30a45f2" category="inline-link-rx"></block> VNVRAM의 경우, 더 나은 쓰기 성능을 제공합니다.</block>
-  <block id="98fffe7875c6770d43b18275f6508460" category="list-text">이 VM 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의 실시간 지능형 캐싱을 통해 데이터 액세스 속도를 높입니다. 데이터베이스, 이메일, 파일 서비스를 비롯한 랜덤 읽기 집약적인 워크로드에 효과적입니다. Flash Cache의 성능 향상 기능을 활용하려면 모든 볼륨에서 압축을 해제해야 합니다.<block ref="11a0a91823c32739dc802a8a06ed9368" category="inline-link-rx"></block>.</block>
   <block id="a63be6f12cd03be8e118239f1f944bda" category="list-text">SSD를 사용할 때는 쓰기 성능이 향상되지만 DS3_v2 가상 머신 유형을 사용할 때는 성능이 향상되지 않습니다.</block>
   <block id="7c7627c6477255acb2239bd1be90f346" category="list-text">Azure 지역 지원은 를 참조하십시오<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>.</block>
   <block id="b049fcbe8198301adc6bf87634a02845" category="section-title">HA 쌍</block>
@@ -305,12 +297,6 @@
   <block id="a20ea8590a5bc20c473682a1138198a0" category="paragraph">AWS, Azure, Google Cloud와 같은 모든 클라우드 공급자의 Cloud Volumes ONTAP에는 다음과 같은 제한 사항이 적용됩니다.</block>
   <block id="4ab1be901507467113ec58325fc4e033" category="section-title">최대 동시 복제 작업 수</block>
   <block id="55daffc7827b6ec74240106a8f647473" category="paragraph">인스턴스 유형 또는 시스템 유형에 상관없이 Cloud Volumes ONTAP에 대한 최대 동시 SnapMirror 또는 SnapVault 전송 수는 노드당 100개입니다.</block>
-  <block id="d302a39827e370146d2861389e98e60c" category="section-title">중국 지역 지원</block>
-  <block id="da059bd73f7531380888607adbbd03aa" category="paragraph">Cloud Volumes ONTAP는 중국 지역에서 다음과 같이 지원됩니다.</block>
-  <block id="cbf02fb0cb394b4b19fb0788f9b62554" category="list-text">Cloud Volumes ONTAP 9.6은 AWS 중국 지역에서 지원됩니다.</block>
-  <block id="fcf30aaa0348521d4d4752992c9db378" category="list-text">단일 노드 시스템이 지원됩니다.</block>
-  <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">NetApp에서 직접 구매한 라이센스가 지원됩니다.</block>
-  <block id="a5a1e4029969159a5f8fdeddd3fb7e1b" category="paragraph">다른 모든 위치, 버전, 구성 및 라이센스는 지원되지 않습니다.</block>
   <block id="38220a2514a2fcb218be440c035b4175" category="section-title">Cloud Volumes ONTAP는 예약된 VM 인스턴스 및 주문형 VM 인스턴스를 지원합니다</block>
   <block id="8ce602039d8c7d53c95e1f62b1d83ef0" category="paragraph">Cloud Volumes ONTAP는 클라우드 공급자의 예약된 VM 인스턴스 또는 주문형 VM 인스턴스에서 실행될 수 있습니다. 다른 유형의 VM 인스턴스는 지원되지 않습니다.</block>
   <block id="f9492a63b4f60679d003c1e9c0ebbb18" category="paragraph">자동 애플리케이션 리소스 관리 솔루션은 Cloud Volumes ONTAP 시스템을 관리해서는 안 됩니다. 이렇게 하면 지원되지 않는 구성이 변경될 수 있습니다. 예를 들어, 솔루션은 Cloud Volumes ONTAP를 지원되지 않는 VM 인스턴스 유형으로 변경할 수 있습니다.</block>
@@ -343,15 +329,12 @@
   <block id="b89c2c565107075baa21741a76a83315" category="summary">Cloud Volumes ONTAP 9.7에는 몇 가지 새로운 기능과 개선 사항이 포함되어 있습니다.</block>
   <block id="a22b810ca21b10c49ab02256e62635bf" category="doc">Cloud Volumes ONTAP 9.7의 새로운 기능</block>
   <block id="f9d74313da16b2bb412c1d7c5efd0534" category="inline-link">Cloud Manager 릴리즈 노트</block>
-  <block id="62703524dbb4d20326585184b2149d4d" category="paragraph">최신 버전의 Cloud Manager에는 추가 기능과 개선 사항도 포함되어 있습니다. 를 참조하십시오<block ref="b168941a5dc7eab411ef9dc2c7a220db" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="c2cf81c744f8b9a8ab90f67fc034c813" category="section-title">9.7 P6(2020년 8월 15일)</block>
   <block id="4d90d21642c7222312363da000d7409f" category="inline-link">P6 패치에서 해결된 버그 목록을 봅니다</block>
   <block id="72fa567d42558de676b3308fc406cca7" category="paragraph">Cloud Volumes ONTAP용 9.7 P6 패치 릴리스는 현재 Cloud Manager 3.8 이상을 통해 제공되고 있습니다. Cloud Manager에서 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지가 표시됩니다.<block ref="6eda068c59ac2a72a79f4f50da9047de" category="inline-link-rx"></block> (NetApp Support 사이트 로그인 필요).</block>
   <block id="b11c166883035b5aa8876a8239248204" category="section-title">추가 용량을 위한 다중 BYOL 라이센스(2020년 8월 3일)</block>
   <block id="5409711e291ed68820671268ac2d1809" category="paragraph">이제 Cloud Volumes ONTAP BYOL 시스템에 여러 개의 라이센스를 구매하여 368TiB 이상의 용량을 할당할 수 있습니다. 예를 들어, 2개의 라이센스를 구입하여 최대 736TiB의 용량을 Cloud Volumes ONTAP에 할당할 수 있습니다. 또는 4개의 라이센스를 구입하여 최대 1.4개의 PiB를 구입할 수 있습니다.</block>
   <block id="5e26587c8f074cc4f0455ff005cb744c" category="paragraph">단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다.</block>
-  <block id="6b2271df31b761a177ee986e7edbbe43" category="paragraph">디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>. 디스크 제한에 대한 자세한 내용은 본 릴리즈 노트의 스토리지 제한을 참조하십시오.</block>
-  <block id="49f9219cdb1e1228aaab9bcce41a456a" category="paragraph"><block ref="ab49af9eee304d2115412e75f962291d" category="inline-link-rx"></block>.</block>
   <block id="3e5d3df99e7b94792149d67b56279af4" category="section-title">9.7 P5 in AWS(2020년 7월 27일)</block>
   <block id="9a2e950b72c7ec04c36563d7223d48b8" category="paragraph">Cloud Volumes ONTAP 9.7 P5는 현재 AWS에서 제공되고 있습니다. 이 패치 릴리즈에는 버그 수정 및 새로운 EC2 인스턴스 유형 지원이 포함되어 있습니다.</block>
   <block id="e890150484086859b9a5078abe9c6f20" category="inline-link">P5 패치에서 해결된 버그 목록을 봅니다</block>
@@ -411,7 +394,6 @@
   <block id="be848edefd07a956fcdb96eb30db2428" category="list-text">m5d.8xLarge^1^</block>
   <block id="e8478e0ed6c472f7f31189c11f3ec75d" category="list-text">m5d.12xLarge^1^</block>
   <block id="3d65139036767d6d1a7a0144349b169b" category="list-text">r5.12xLarge^2^</block>
-  <block id="54e92fde42179ca33e3ab25b036eee3b" category="paragraph">^1^ 이러한 인스턴스 유형에는 Cloud Volumes ONTAP이 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다.<block ref="11a0a91823c32739dc802a8a06ed9368" category="inline-link-rx"></block>.</block>
   <block id="309e3583c7ae724b365fad4861425136" category="paragraph">^2^ r5.12xLarge 인스턴스 유형은 지원 가능성의 알려진 제한 사항이 있습니다. 패닉이 발생하여 노드가 예기치 않게 재부팅되는 경우 시스템에서 문제 해결에 사용되는 핵심 파일을 수집하지 못하고 문제의 근본 원인을 해결하지 못할 수 있습니다. 고객은 위험 및 제한된 지원 약관에 동의하며 이 조건이 발생할 경우 모든 지원 책임을 집니다.</block>
   <block id="e40db7e519ec8133d3d5ec2b6018eb7d" category="inline-link">이러한 EC2 인스턴스 유형에 대해 자세히 알아보십시오</block>
   <block id="14c41dc08d5ec9262ecf13e1e578aa8d" category="paragraph"><block ref="9c041fd599501fd190b6b179970667cf" category="inline-link-rx"></block>.</block>
@@ -444,13 +426,11 @@
   <block id="3a36e6b466e0265c25d241c486f64e02" category="paragraph">Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의 실시간 지능형 캐싱을 통해 데이터 액세스 속도를 높입니다. 데이터베이스, 이메일, 파일 서비스를 비롯한 랜덤 읽기 집약적인 워크로드에 효과적입니다.</block>
   <block id="4015ae5e6b2ecd2974c11a6b65441b93" category="paragraph">이 VM 유형을 사용하여 새 시스템을 구축하거나 기존 시스템을 수정하여 이 VM 유형을 사용하면 Flash Cache를 자동으로 활용할 수 있습니다.</block>
   <block id="553b70570fc3707fd37e4e8aa786f0b9" category="inline-link">데이터 압축 제한 등 Cloud Volumes ONTAP에서 Flash Cache를 사용하는 방법에 대해 자세히 알아보십시오</block>
-  <block id="713de8424cfefb893e21cf6d3bb5f911" category="paragraph"><block ref="d97c7319fc2c3f23ffc28353e36465bf" category="inline-link-rx"></block>.</block>
   <block id="8672d3a06c1cc1b517e683f8707d99cc" category="section-title">Azure NIC 분리 이벤트 수정</block>
   <block id="f51d4f047498c18875c3d40eb0585745" category="paragraph">이 릴리즈에서는 Azure NIC 분리 이벤트에서 Cloud Volumes ONTAP 노드 재부팅의 문제를 해결합니다. Cloud Volumes ONTAP는 이러한 이벤트를 보다 원활하게 처리하고 서비스를 중단시키지 않습니다. Cloud Volumes ONTAP HA 쌍에서는 Azure 고정 유지 관리 이벤트로부터 테이크오버/반환 시퀀스를 계속 수행하지만, 이 시간 동안 발생할 수 있는 NIC 분리에서는 후속 재부팅이 없습니다.</block>
   <block id="b5cb41a6703cf18b4cecd5a0817f91cf" category="section-title">노트 업그레이드</block>
   <block id="2e870f040be3452f4efc185a4356bafb" category="list-text">9.6 릴리즈에서 Cloud Volumes ONTAP 9.7로 업그레이드할 수 있습니다. Cloud Manager에서 기존 Cloud Volumes ONTAP 9.6 시스템을 9.7 릴리즈로 업그레이드하라는 메시지가 표시됩니다.</block>
   <block id="1c58b0eb30a6dcb357eb70a5f2b7b763" category="inline-link">Cloud Manager에서 알림을 받을 때 업그레이드하는 방법에 대해 알아보십시오</block>
-  <block id="803d45df8eb29c3872409cc750868adb" category="paragraph"><block ref="91157be1d04ccb789488c1869d33e63c" category="inline-link-rx"></block>.</block>
   <block id="9f0f02784feedfa2549a9e3a51cfa315" category="list-text">단일 노드 시스템을 업그레이드하면 시스템이 최대 25분 동안 오프라인 상태로 전환되고 이 동안 I/O가 중단됩니다.</block>
   <block id="00795e3f043d0bab791590ffc0257204" category="list-text">HA 2노드 업그레이드는 무중단으로 I/O를 업그레이드할 수 있으며 이 무중단 업그레이드 프로세스 중에 각 노드가 동시 업그레이드되어 클라이언트에 I/O를 계속 제공합니다.</block>
   <block id="9141535b8d150812f3cded29f090ad8c" category="summary">Google Cloud에서는 여러 Cloud Volumes ONTAP 구성이 지원됩니다.</block>
@@ -463,7 +443,6 @@
   <block id="0cd9470795b4cb3063783195b32f04ac" category="list-text">N1-표준-8</block>
   <block id="12f53e222fe53c58560223e660dcae57" category="list-text">N1-표준-32</block>
   <block id="3a3ea5383480e2466943cf15294f23a6" category="cell">영역 영구 디스크(SSD 및 표준)</block>
-  <block id="869d12417f0d6085bf2ee05d7abd89e6" category="list-text">디스크 제한을 사용하면 디스크만 사용하여 최대 시스템 용량 제한에 도달하지 못할 수 있습니다. 용량 제한에 도달할 수 있습니다<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>.</block>
   <block id="f30cabe0a77d16d16cf1ef723d8eb186" category="inline-link-macro">Google Cloud의 디스크 제한에 대해 자세히 알아보십시오</block>
   <block id="a93742b808592a2ce1b1926f98f391eb" category="paragraph"><block ref="46bbc0e4d7a811f26e46cbb2c2ad7173" category="inline-link-macro-rx"></block>.</block>
   <block id="b4c4a8c75337dc28089aec3e79ae943c" category="list-text">PAYGO Explore에서는 Google Cloud Storage에 대한 데이터 계층화가 지원되지 않습니다.</block>
@@ -485,7 +464,6 @@
   <block id="295f33d6ece0cb2125433cf6ec678e7e" category="paragraph">아래 표는 디스크만 사용할 경우 VM 크기별 최대 시스템 용량을 보여 주고, 디스크와 콜드 데이터를 오브젝트 스토리지로 계층화하는 방법을 보여 줍니다.</block>
   <block id="f114a72e19307d64279cad76172579f0" category="list-text">단일 노드 시스템에서는 표준 HDD 관리 디스크, 표준 SSD 관리 디스크, 프리미엄 SSD 관리 디스크를 사용할 수 있으며 디스크당 최대 32TiB를 사용할 수 있습니다. 지원되는 디스크 수는 VM 크기에 따라 다릅니다.</block>
   <block id="bb8cb4958d23b69d96d3891aa7ae598a" category="list-text">HA 시스템은 프리미엄 페이지 Blob을 디스크로 사용하며 페이지 blob당 최대 8TiB를 사용합니다. 지원되는 디스크 수는 VM 크기에 따라 다릅니다.</block>
-  <block id="c40775108b323ba29757ee7d6526594a" category="admonition">Cloud Volumes ONTAP BYOL 시스템에 대해 여러 노드 기반 라이센스를 구입하여 368TiB 이상의 용량을 할당할 수 있습니다. 단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다. 디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>.<block ref="cd9ff634efd9a4fe20f170cd618702b5" category="inline-link-rx"></block>.</block>
   <block id="50c51ed959c686d478aaf3f5e64ce255" category="cell">VM 크기입니다</block>
   <block id="1522e1d48d50a8b533ccfa8eeaad6405" category="cell">노드당 MAX Data 디스크</block>
   <block id="7f39f8317fbdb1988ef4c628eba02591" category="cell">61</block>
@@ -554,11 +532,27 @@
   <block id="30af1a6878bac3a7aaed5d0e64e7b511" category="paragraph">Cloud Volumes ONTAP은 다양한 라이센스 옵션을 제공하므로 요구사항에 맞는 소비 모델을 선택할 수 있습니다.</block>
   <block id="37439fa615a442ec183c1c602f9755f1" category="paragraph">용량 기반 라이센스는 _package_ 형식으로 제공됩니다. Cloud Volumes ONTAP 시스템을 구축할 때 비즈니스 요구 사항에 따라 여러 라이센스 패키지 중에서 선택할 수 있습니다.</block>
   <block id="deb56fb5a824215375b16e72749e2aa3" category="inline-link">이러한 라이센스 옵션에 대해 자세히 알아보십시오</block>
-  <block id="f3b3e9858be5dbfaf6c39891db3263a2" category="paragraph"><block ref="f3b3e9858be5dbfaf6c39891db3263a2" category="inline-link-rx"></block></block>
   <block id="33f66f5b18b24875dca7a81c8f84c5b9" category="cell">896TiB</block>
-  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">모든 Cloud Manager 설명서</block>
   <block id="dbe94f36417009d827f76ccf107bd90c" category="section-title">자동 애플리케이션 리소스 관리 솔루션을 사용해서는 안 됩니다</block>
   <block id="2f9882645b2c32820ad085240bacb763" category="paragraph-title">HA의 경우 노드당 또는 전체 HA 쌍의 라이센스 용량 제한이 있습니까?</block>
   <block id="fc9a388cd18c69244f22554de6f0d544" category="paragraph-title">AWS의 HA 시스템에서 미러링된 데이터는 용량 제한에 따라 계산됩니까?</block>
   <block id="1f129df010c594cb0d37bd30745a3820" category="paragraph"><block ref="1f129df010c594cb0d37bd30745a3820" category="inline-link-rx"></block></block>
+  <block id="79d3c4941fdb49ae08cc30405f716cce" category="list-text">일부 구성에서는 디스크 제한만으로 용량 제한에 도달하지 못합니다. 이 경우 를 통해 용량 제한에 도달할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>. 디스크 제한에 대한 자세한 내용은 를 참조하십시오 <block ref="71ccaacc6f6c8feca068c7ff1a7b2eb5" category="inline-link-macro-rx"></block>.</block>
+  <block id="d424e7f11ba3f8c54b78553f58815d63" category="list-text">이러한 인스턴스 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의 실시간 지능형 캐싱을 통해 데이터 액세스 속도를 높입니다. 데이터베이스, 이메일, 파일 서비스를 비롯한 랜덤 읽기 집약적인 워크로드에 효과적입니다. Flash Cache의 성능 향상 기능을 활용하려면 모든 볼륨에서 압축을 해제해야 합니다.<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>.</block>
+  <block id="c00893a0ffabdcfdc5c2abd6001e5e33" category="admonition">Cloud Volumes ONTAP BYOL 시스템에 대해 여러 노드 기반 라이센스를 구입하여 368TiB 이상의 용량을 할당할 수 있습니다. 단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다. 디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>.<block ref="ca37ce4dde5616ef242d545490c7e6ee" category="inline-link-rx"></block>.</block>
+  <block id="ae90a2e4532cb9b615489b63c36e2383" category="paragraph"><block ref="dca5658ae26fff987979f5de0a83e9fd" category="inline-link-rx"></block>.</block>
+  <block id="6ed74a41a62734e492094462d818e839" category="paragraph">Cloud Manager 문서의 제한 사항 보기:<block ref="39ce2d41c9ed9c2da4c4794ff62efcad" category="inline-link-rx"></block></block>
+  <block id="efb78221b5926bd89d824f8dec9a7ed2" category="list-text">디스크 제한을 사용하면 디스크만 사용하여 최대 시스템 용량 제한에 도달하지 못할 수 있습니다. 용량 제한에 도달할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>.</block>
+  <block id="c46270a9bdf069bd0e015f7953e02355" category="paragraph"><block ref="c46270a9bdf069bd0e015f7953e02355" category="inline-link-rx"></block></block>
+  <block id="396e70da46ca6b8f2dd7d352ab5d7f16" category="paragraph">일부 구성에서는 디스크 제한만으로 용량 제한에 도달하지 못합니다. 용량 제한에 도달할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>. 자세한 내용은 아래의 디스크 제한을 참조하십시오.</block>
+  <block id="3dde15a6d2657b4aa844ffd9ddb429a0" category="paragraph">일부 HA 구성에서는 디스크 하나만 사용하여 용량 제한에 도달하지 않도록 합니다. 이 경우 를 통해 용량 제한에 도달할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>. 자세한 내용은 아래의 용량 및 디스크 제한을 참조하십시오.</block>
+  <block id="74620547288f003c63c99ad0bb05f8b6" category="admonition">이제 Cloud Volumes ONTAP BYOL 시스템에 여러 노드 기반 라이센스를 구입하여 368TiB 이상의 용량을 할당할 수 있습니다. 단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다. 디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>.<block ref="ca37ce4dde5616ef242d545490c7e6ee" category="inline-link-rx"></block>.</block>
+  <block id="6d43452380cd21cb4417b9a1824c3ac4" category="paragraph">최신 버전의 Cloud Manager에는 추가 기능과 개선 사항도 포함되어 있습니다. 를 참조하십시오<block ref="ae983c0a7ee8a786f01e9cc8530d422b" category="inline-link-rx"></block> 를 참조하십시오.</block>
+  <block id="b9324a93e97fb66cba9e5b419a8883be" category="paragraph">디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>. 디스크 제한에 대한 자세한 내용은 본 릴리즈 노트의 스토리지 제한을 참조하십시오.</block>
+  <block id="1aee85d1930ce6039d2775849f874154" category="paragraph"><block ref="4eae04c0d7502ca379f18c9f1df2cbc7" category="inline-link-rx"></block>.</block>
+  <block id="f0b3ec3784c8134aa3d1b3f616747c1f" category="paragraph">^1^ 이러한 인스턴스 유형에는 Cloud Volumes ONTAP이 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다.<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>.</block>
+  <block id="cf8932e0b406d0080602ae2ba6050f34" category="paragraph"><block ref="a93831aad103880218b6184b641135d6" category="inline-link-rx"></block>.</block>
+  <block id="9dc25dec6d124cf86502e589c40d61af" category="paragraph"><block ref="856eab59dd4487874302c47901a1ac92" category="inline-link-rx"></block>.</block>
+  <block id="64440bb71539a777dc59cfbda8a3e5ee" category="list-text">이 VM 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의 실시간 지능형 캐싱을 통해 데이터 액세스 속도를 높입니다. 데이터베이스, 이메일, 파일 서비스를 비롯한 랜덤 읽기 집약적인 워크로드에 효과적입니다. Flash Cache의 성능 향상 기능을 활용하려면 모든 볼륨에서 압축을 해제해야 합니다.<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>.</block>
+  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">모든 BlueXP 설명서</block>
 </blocks>

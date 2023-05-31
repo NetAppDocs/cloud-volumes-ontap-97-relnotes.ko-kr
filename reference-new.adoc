@@ -16,7 +16,7 @@ summary: Cloud Volumes ONTAP 9.7에는 몇 가지 새로운 기능과 개선 사
 [role="lead"]
 Cloud Volumes ONTAP 9.7에는 몇 가지 새로운 기능과 개선 사항이 포함되어 있습니다.
 
-최신 버전의 Cloud Manager에는 추가 기능과 개선 사항도 포함되어 있습니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager 릴리즈 노트"^] 를 참조하십시오.
+최신 버전의 Cloud Manager에는 추가 기능과 개선 사항도 포함되어 있습니다. 를 참조하십시오 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Cloud Manager 릴리즈 노트"^] 를 참조하십시오.
 
 
 
@@ -32,9 +32,9 @@ Cloud Volumes ONTAP용 9.7 P6 패치 릴리스는 현재 Cloud Manager 3.8 이�
 
 단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다.
 
-디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"^]. 디스크 제한에 대한 자세한 내용은 본 릴리즈 노트의 스토리지 제한을 참조하십시오.
+디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"^]. 디스크 제한에 대한 자세한 내용은 본 릴리즈 노트의 스토리지 제한을 참조하십시오.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["Cloud Volumes ONTAP에 시스템 라이센스를 추가하는 방법에 대해 알아보십시오"^].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["Cloud Volumes ONTAP에 시스템 라이센스를 추가하는 방법에 대해 알아보십시오"^].
 
 
 
@@ -173,7 +173,7 @@ NetApp은 새로운 EC2 인스턴스에 대한 지원과 지원되는 데이터 
 * r5.12xLarge^2^
 
 
-^1^ 이러한 인스턴스 유형에는 Cloud Volumes ONTAP이 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["자세한 정보"^].
+^1^ 이러한 인스턴스 유형에는 Cloud Volumes ONTAP이 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["자세한 정보"^].
 
 ^2^ r5.12xLarge 인스턴스 유형은 지원 가능성의 알려진 제한 사항이 있습니다. 패닉이 발생하여 노드가 예기치 않게 재부팅되는 경우 시스템에서 문제 해결에 사용되는 핵심 파일을 수집하지 못하고 문제의 근본 원인을 해결하지 못할 수 있습니다. 고객은 위험 및 제한된 지원 약관에 동의하며 이 조건이 발생할 경우 모든 지원 책임을 집니다.
 
@@ -237,7 +237,7 @@ Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의
 
 이 VM 유형을 사용하여 새 시스템을 구축하거나 기존 시스템을 수정하여 이 VM 유형을 사용하면 Flash Cache를 자동으로 활용할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["데이터 압축 제한 등 Cloud Volumes ONTAP에서 Flash Cache를 사용하는 방법에 대해 자세히 알아보십시오"^].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["데이터 압축 제한 등 Cloud Volumes ONTAP에서 Flash Cache를 사용하는 방법에 대해 자세히 알아보십시오"^].
 
 
 
@@ -252,7 +252,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-ca
 * Cloud Volumes ONTAP 업그레이드는 Cloud Manager에서 완료해야 합니다. System Manager 또는 CLI를 사용하여 Cloud Volumes ONTAP를 업그레이드해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 줄 수 있습니다.
 * 9.6 릴리즈에서 Cloud Volumes ONTAP 9.7로 업그레이드할 수 있습니다. Cloud Manager에서 기존 Cloud Volumes ONTAP 9.6 시스템을 9.7 릴리즈로 업그레이드하라는 메시지가 표시됩니다.
 +
-http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Cloud Manager에서 알림을 받을 때 업그레이드하는 방법에 대해 알아보십시오"^].
+http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html["Cloud Manager에서 알림을 받을 때 업그레이드하는 방법에 대해 알아보십시오"^].
 
 * 단일 노드 시스템을 업그레이드하면 시스템이 최대 25분 동안 오프라인 상태로 전환되고 이 동안 I/O가 중단됩니다.
 * HA 2노드 업그레이드는 무중단으로 I/O를 업그레이드할 수 있으며 이 무중단 업그레이드 프로세스 중에 각 노드가 동시 업그레이드되어 클라이언트에 I/O를 계속 제공합니다.
