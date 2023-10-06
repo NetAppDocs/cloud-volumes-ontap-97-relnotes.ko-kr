@@ -172,14 +172,12 @@
   <block id="16846c5209003ab4f34944e5d313f4eb" category="cell">256TB</block>
   <block id="fb477a816dd39a57a35e342288ae601b" category="cell">디스크 및 콜드 데이터를 Google Cloud Storage 버킷으로 계층화하여 시스템 용량 극대화</block>
   <block id="1a731420bbc4adfcc3e3c640955180d2" category="cell">라이센스에 따라 다릅니다. 위의 표를 참조하십시오.</block>
-  <block id="c774172e35ab7294ce80989983a6d47e" category="paragraph">Cloud Volumes ONTAP는 Google Cloud Platform 디스크를 _aggregate_로 그룹화합니다. Aggregate는 볼륨에 스토리지를 제공합니다.</block>
   <block id="c389ec32ff881349ecd52e49206d250a" category="cell">최대 데이터 애그리게이트 수입니다</block>
   <block id="618725888d1829a60dcc85830f8abc3b" category="cell">99^1^</block>
   <block id="b0eb916ce2b9bb7784362d98a3b1ce24" category="cell">96TB의 물리적 용량^2^</block>
   <block id="d5372d02fa2f8d09ddfa9be3500d8847" category="list-text">최대 데이터 애그리게이트 수에는 루트 애그리게이트가 포함되지 않습니다.</block>
   <block id="73a985be794327e4a037c64d0184774a" category="cell">* SVM(스토리지 가상 시스템) *</block>
   <block id="87e33aeb90b4a866393a43dd945eb88d" category="cell">Cloud Volumes ONTAP의 최대 개수입니다</block>
-  <block id="d6cb2227648314141c252f8fc0ee513a" category="cell">재해 복구에 사용되는 1개의 SVM 및 1개의 대상 SVM 소스 SVM이 중단되었을 경우 데이터 액세스를 위해 대상 SVM을 활성화할 수 있습니다. ^1^ 하나의 데이터 지원 SVM이 전체 Cloud Volumes ONTAP 시스템에 적용됩니다.</block>
   <block id="fa6258f6bacddead986c2cbf9e97e512" category="cell">계층적 복제 깊이 ^2^</block>
   <block id="309524b9e1ef1d7d7d905c7cb1d358e9" category="cell">100TB</block>
   <block id="f930216066584d74a1d100b4781661f9" category="list-text">Cloud Manager는 SVM 재해 복구에 대한 설정 또는 오케스트레이션 지원을 제공하지 않습니다. 또한, 추가 SVM에서 스토리지 관련 작업을 지원하지 않습니다. SVM 재해 복구에 System Manager 또는 CLI를 사용해야 합니다.</block>
@@ -535,14 +533,12 @@
   <block id="1f129df010c594cb0d37bd30745a3820" category="paragraph"><block ref="1f129df010c594cb0d37bd30745a3820" category="inline-link-rx"></block></block>
   <block id="79d3c4941fdb49ae08cc30405f716cce" category="list-text">일부 구성에서는 디스크 제한만으로 용량 제한에 도달하지 못합니다. 이 경우 를 통해 용량 제한에 도달할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>. 디스크 제한에 대한 자세한 내용은 를 참조하십시오 <block ref="71ccaacc6f6c8feca068c7ff1a7b2eb5" category="inline-link-macro-rx"></block>.</block>
   <block id="d424e7f11ba3f8c54b78553f58815d63" category="list-text">이러한 인스턴스 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의 실시간 지능형 캐싱을 통해 데이터 액세스 속도를 높입니다. 데이터베이스, 이메일, 파일 서비스를 비롯한 랜덤 읽기 집약적인 워크로드에 효과적입니다. Flash Cache의 성능 향상 기능을 활용하려면 모든 볼륨에서 압축을 해제해야 합니다.<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>.</block>
-  <block id="c00893a0ffabdcfdc5c2abd6001e5e33" category="admonition">Cloud Volumes ONTAP BYOL 시스템에 대해 여러 노드 기반 라이센스를 구입하여 368TiB 이상의 용량을 할당할 수 있습니다. 단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다. 디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>.<block ref="ca37ce4dde5616ef242d545490c7e6ee" category="inline-link-rx"></block>.</block>
   <block id="ae90a2e4532cb9b615489b63c36e2383" category="paragraph"><block ref="dca5658ae26fff987979f5de0a83e9fd" category="inline-link-rx"></block>.</block>
   <block id="6ed74a41a62734e492094462d818e839" category="paragraph">Cloud Manager 문서의 제한 사항 보기:<block ref="39ce2d41c9ed9c2da4c4794ff62efcad" category="inline-link-rx"></block></block>
   <block id="efb78221b5926bd89d824f8dec9a7ed2" category="list-text">디스크 제한을 사용하면 디스크만 사용하여 최대 시스템 용량 제한에 도달하지 못할 수 있습니다. 용량 제한에 도달할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>.</block>
   <block id="c46270a9bdf069bd0e015f7953e02355" category="paragraph"><block ref="c46270a9bdf069bd0e015f7953e02355" category="inline-link-rx"></block></block>
   <block id="396e70da46ca6b8f2dd7d352ab5d7f16" category="paragraph">일부 구성에서는 디스크 제한만으로 용량 제한에 도달하지 못합니다. 용량 제한에 도달할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>. 자세한 내용은 아래의 디스크 제한을 참조하십시오.</block>
   <block id="3dde15a6d2657b4aa844ffd9ddb429a0" category="paragraph">일부 HA 구성에서는 디스크 하나만 사용하여 용량 제한에 도달하지 않도록 합니다. 이 경우 를 통해 용량 제한에 도달할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>. 자세한 내용은 아래의 용량 및 디스크 제한을 참조하십시오.</block>
-  <block id="74620547288f003c63c99ad0bb05f8b6" category="admonition">이제 Cloud Volumes ONTAP BYOL 시스템에 여러 노드 기반 라이센스를 구입하여 368TiB 이상의 용량을 할당할 수 있습니다. 단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다. 디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>.<block ref="ca37ce4dde5616ef242d545490c7e6ee" category="inline-link-rx"></block>.</block>
   <block id="6d43452380cd21cb4417b9a1824c3ac4" category="paragraph">최신 버전의 Cloud Manager에는 추가 기능과 개선 사항도 포함되어 있습니다. 를 참조하십시오<block ref="ae983c0a7ee8a786f01e9cc8530d422b" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="b9324a93e97fb66cba9e5b419a8883be" category="paragraph">디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>. 디스크 제한에 대한 자세한 내용은 본 릴리즈 노트의 스토리지 제한을 참조하십시오.</block>
   <block id="1aee85d1930ce6039d2775849f874154" category="paragraph"><block ref="4eae04c0d7502ca379f18c9f1df2cbc7" category="inline-link-rx"></block>.</block>
@@ -559,4 +555,11 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="fd164e9cb2bc1ac5405cabfe451663f7" category="cell">PiB 2개(여러 개의 라이센스 필요)</block>
+  <block id="b3ffb91616ad248d4f6468f29260116d" category="paragraph">Cloud Volumes ONTAP는 Google Cloud 디스크를 _aggregates_로 그룹화합니다. Aggregate는 볼륨에 스토리지를 제공합니다.</block>
+  <block id="b5e314b9d77a000bf082da78bb9eed7a" category="cell">재해 복구에 사용되는 1개의 SVM 및 1개의 대상 SVM 소스 SVM이 중단될 경우, 데이터 액세스를 위해 대상 SVM을 활성화할 수 있습니다. ^1^
+
+하나의 데이터 서비스 SVM은 전체 Cloud Volumes ONTAP 시스템을 포괄합니다.</block>
+  <block id="2dbd9a217bce4c7ba4ef467f57d6875c" category="list-text">Cloud Volumes ONTAP BYOL 단일 노드 또는 HA 쌍 시스템에 대해 노드 기반 라이센스를 여러 개 구매하여 최대 테스트 및 지원 시스템 용량 제한인 2개의 PiB까지 368TiB의 용량을 할당할 수 있습니다. 디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>.<block ref="ca37ce4dde5616ef242d545490c7e6ee" category="inline-link-rx"></block>. Cloud Volumes ONTAP는 최대 테스트 및 지원되는 시스템 용량인 2 PiB를 지원하지만 2 PiB 제한을 초과하면 지원되지 않는 시스템 구성이 발생합니다.</block>
+  <block id="de9d6749570efc87e63811b5947fc250" category="list-text">AWS Secret Cloud 및 Top Secret Cloud 지역에서는 Cloud Volumes ONTAP 9.12.1부터 다수의 노드 기반 라이센스 구매를 지원합니다.</block>
 </blocks>
