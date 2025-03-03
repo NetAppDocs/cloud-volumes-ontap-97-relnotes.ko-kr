@@ -112,7 +112,7 @@ NetApp은 독일 공공 지역에서 Cloud Volumes ONTAP를 지속적으로 지�
 * 독일 웨스트 센트럴(퍼블릭)
 
 
-https://cloud.netapp.com/cloud-volumes-global-regions["지원되는 Azure 지역의 전체 목록을 참조하십시오"^].
+https://bluexp.netapp.com/cloud-volumes-global-regions["지원되는 Azure 지역의 전체 목록을 참조하십시오"^]..
 
 
 
